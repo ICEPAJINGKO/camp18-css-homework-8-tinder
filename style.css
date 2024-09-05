@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url("https://tinder.com/static/build/ac062d1b428513b9c13d11026d330e34.webp");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+.menu-l {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tx-mu {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.menu-l > a:hover {
+    color: #FD3070;
+    text-decoration: underline;
+}
+
+.menu-r > a {
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+}
+
+.menu-r > a:hover {
+    background-color: rgba(150, 150, 150, 0.5);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > p {
+    color: white;
+    font-size: 150px;
+    font-weight: bold;;
+}
+
+.container > button {
+    color: white;
+    background: rgb(253,48,112);
+    background: linear-gradient(45deg, rgba(253,48,112,1) 0%, rgba(254,87,67,1) 100%);
+}
+
+.btn {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.notation {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 12px !important;
+    font-weight: lighter !important;
+}
+
+.footer {
+    width: 100%;
+    height: 600px;
+    background-color: #111418;
+}
